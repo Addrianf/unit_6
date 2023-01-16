@@ -9,9 +9,9 @@ let missed = 0;
 const phrases = [
     'abracadabra',
     'lickety split',
-    'strapped for cash',
-    'reality check',
-    'the matrix'
+    'skedaddle',
+    'mi amor',
+    'taco cat'
 ];
 
 //start button being pressed
@@ -80,7 +80,7 @@ const checkWin = () => {
         reset();
     } else if (missed > 4) {
         overlay.classList.add('lose');
-        headline.textContent = 'You lose.';
+        headline.textContent = `You lose.`;
         overlay.style.display = 'flex';
         reset();
     }
