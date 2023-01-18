@@ -77,11 +77,13 @@ const checkWin = () => {
         overlay.classList.add('win');
         headline.textContent = 'You win!';
         overlay.style.display = 'flex';
+        startButton.textContent = "Reset Game";
         reset();
     } else if (missed > 4) {
         overlay.classList.add('lose');
         headline.textContent = `You lose.`;
         overlay.style.display = 'flex';
+        startButton.textContent = "Reset Game";
         reset();
     }
 }
